@@ -1,0 +1,57 @@
+.containter{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+}
+
+.box{
+    color:white;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+}
+
+.static{
+    position: static;
+    background-color: black;
+}
+
+.rel{
+    position: relative;
+    background-color: red;
+    /* top: 50px; */
+    /* left: 100px; */
+    /* right: 100px; */
+    top: 100px;
+    left: 200px;
+}
+
+.abs{
+    background-color: blue;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.fix{
+    background-color: brown;
+    position: fixed;
+    /* top: 10;
+    left: 0; */
+    bottom: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.sti{
+    background-color: purple;
+    position: sticky;
+    top: 300px;
+    left: 120px;
+}
+
+.blankspace{
+    height: 400vh;
+
+}

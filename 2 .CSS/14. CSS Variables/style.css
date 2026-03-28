@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-text-color: #222;
+  --secondary-color:#444;
+  --crad-background-color: #fff;
+  --parent-background-color:#eee;
+  --spacing-for-marign-padding:20px;
+
+}
+.dark{
+  --primary-text-color: #ddd;
+  --secondary-color:#bbb;
+  --crad-background-color: #333;
+  --parent-background-color:#111;
+}
+.container{
+  padding:20px;
+  background-color: var(--parent-background-color);
+  min-height: 100vh;
+}
+h1{
+  text-align: center;
+  background-color: var(--crad-background-color);
+  color: var( --primary-text-color);
+  margin: var(--spacing-for-marign-padding);
+  padding: var(--spacing-for-marign-padding);
+}
+h2{
+  --backg-color:yellow;
+  color: var( --primary-text-color);
+  /* background-color: var(--backg-color); */
+}
+
+.box{
+  padding: var(--spacing-for-marign-padding);
+  margin-block: var(--spacing-for-marign-padding);
+  /* --var-name: aqua; */
+
+  /* --backg-color: yellow; */
+  /* background-color: var(--backg-color); */
+  background-color: var(--crad-background-color);
+  border-radius: 5%;
+}
+
+.box p{
+  color: var(--secondary-color);
+}
+h4{
+  padding: var(--spacing-for-marign-padding);
+  background-color: var(--backg-color,pink);
+}
+/* 
+@media (max-width:600px){
+  .box{
+    --backg-color: green;
+  }
+} */

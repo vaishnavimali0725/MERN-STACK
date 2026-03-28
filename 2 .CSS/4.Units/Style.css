@@ -1,0 +1,33 @@
+main{
+    border: 4px dashed brown;
+    /* border-radius: 5px; */
+    width: 50%;
+    /* %,vw(view width), (view hieght), px(pixxls), em, rem */
+
+    width: 50vw;
+}
+
+/* websites:- 1. zuga.net
+            2.developer.mozilla.org
+                i.CSS values and units
+                    a.To recap, the em unit "my parent element font-size".
+                     */
+/* 
+html{
+    font-size: 1em;
+} */
+section{
+    border: 4px dotted green;
+    /* height:  150vh; */
+    width: 70vw; 
+}
+ body{
+    font-size: 2em;
+}
+header{
+    font-size: 2em;
+}
+h2{
+    /* font-size: 4em; */
+    font-size: 4em;
+}

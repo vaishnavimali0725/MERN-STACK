@@ -1,0 +1,15 @@
+body{
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    color: #90ee90;
+    background-color: #000000;
+}
+article{
+    background-color: #9802AF;
+    color: #ffffff;
+    padding: 45px;
+    margin: 45px;
+    font-size: 16px;
+    border-radius: 5%;
+}

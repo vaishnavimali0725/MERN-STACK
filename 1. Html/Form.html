@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms in HTML</title>
+</head>
+<body>
+    <h2>Forms in HTML:</h2>
+    <form action="">
+         <label for="Fname">Frist Name:</label>
+         <input 
+            type="text" 
+            minlength="5"
+            maxlength="12"
+            required 
+            placeholder="pls enter frist name"
+            value=""
+            name="fName"/>
+
+         <label for="Mname">Middle Name:</label>
+        <input type="text" value="RK" />
+    
+        <label for="Lname">Last Name:</label>
+        <input type="text" type="text" disabled/>
+        <br/><br/>
+
+        <label for="">Age:</label>
+        <input type="number">
+        <br><br>
+
+        <label for="">Email:</label>
+        <input type="email"/>
+        <br><br>
+
+        <label for="">Date of Joining:</label>
+        <input type="date" name="" id="">
+        <br><br>
+
+        <label for="">Password:</label>
+        <input type="password" name="" id="">
+
+        <p>Enter your shirt size:</p>
+        <input type="radio" name="shirtSize" id="small" checked value="small"/><label for="small">Small size</label>
+        <input type="radio" name="shirtSize" id="medium" value="medium"/><label for="medium">Medium size</label>
+        <input type="radio" name="shirtSize" id="large" value="large"/><label for="large">Large size</label>
+        <br><br>
+
+        <p>Select the know  language:</p>
+        <input type="checkbox" name="lang" id="small"/><label for="small">English</label>
+        <input type="checkbox" name="lang" id="medium"/><label for="medium">Marathi</label>
+        <input type="checkbox" name="lang" id="large"/><label for="large">HTML</label>
+        <input type="checkbox" name="lang" id="large"/><label for="large">Hindi</label>
+        <br><br>
+
+         <label for="clr">Please select the colors for your shirt:</label>
+         <input type="color" name="" id=""/>
+         <br><br>
+
+         <label for="paymentOption">Please select a payment method </label>
+         <select id="paymentOption">
+            <option value=""></option>
+            <option value="">Gpay</option>
+            <option value="">Phone Pay</option>
+            <option value="">UPI</option>
+            <option value="">COD</option>
+         </select>
+         <br><br>
+
+         <label for="cmt">Please provide your valuable feedback:</label>
+         <textarea  
+         name="cmt" 
+         id="cmt" 
+         rows="18" 
+         placeholder="ple enter your coments here... "></textarea>
+
+         <br><br>
+         <input type="reset"/>
+         <input type="submit"/>
+
+
+    </form>
+</body>
+</html>

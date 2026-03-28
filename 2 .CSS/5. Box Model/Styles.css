@@ -1,0 +1,29 @@
+/* Developer.mozilla.org- the web sites for web developers 
+            CSS > Box Model
+            HTML>Reference>Elements><div> (https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div)
+    w3schools.com/css/css_boxmodel.asp - The help to understand the box model 
+        Explanation of the different parts (from innermost part to outermost part):
+
+        Content - The content of the box, where text and images appear
+        Padding - Clears an area around the content. The padding is transparent
+        Border - A border that goes around the padding and content
+        Margin - Clears an area outside the border. The margin is transparent
+        */
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.box2{
+    padding: 60px;
+}
+div{
+    border: 15px solid greenyellow;
+    /* padding: 35px 40px 45px 50px; */
+        padding: 10px 40px;
+    /*top right bottom left*/
+    /* padding-left: 45px; */
+    margin: 40px 40px;
+    width: 250px;
+    height: 250px;
+}

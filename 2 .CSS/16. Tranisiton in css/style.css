@@ -1,0 +1,44 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 100px auto;
+    transition: 1s;
+
+    transition-duration: 0.4s;
+    transition-property: background-color, border-radius, transform;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+
+.box:hover{
+    background-color: chartreuse;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+/* .nav{
+    background-color: black;
+    color: white;
+} */
+
+/* CSS Animatables CSS propertites https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Animations/Animatable_properties */
+
+/* transtion timing function css https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition-timing-function */
+.list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.item{
+    font-size: 2.5rem;
+    transition: 0.2s ease-in;
+}
+
+.item:hover{
+    color:#fff;
+    background-color: red;
+    cursor: pointer;
+    transform: translateY(-12px);
+
+}

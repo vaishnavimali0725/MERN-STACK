@@ -1,0 +1,83 @@
+/* 
+Selector Syntax:
+selectorsType{
+    propertykey: propertyvalue;
+}
+ */
+
+ /* 1.Element Selector */
+ /* p{
+    color: red;
+ }
+
+ h2{
+    color: blue;
+    background-color: black;
+ } */
+
+ /* 2.Id Selector */
+/* #pId{
+    color: brown;
+}
+
+#p1Id{
+    font-family: cursive;
+    color: brown;
+} */
+/* 
+#pId,#p1Id, .highlighter,p{
+    color:brown
+} */
+
+/* 3.Class Selector */
+/* 
+.p1Class{
+    color: red;
+    background-color: lightgrey;
+}
+
+.highlighter{
+    background-color: yellow;
+}
+
+.headerStyles{
+    font-size: larger;
+    color: red;
+} */
+
+/* 
+Specificity Order: 
+    >>ID>>Class>>Element
+*/
+/* #nestedId{
+    color: red;
+}
+
+.nestedClass{
+    color: blue;
+} */
+/* .p{
+    color: yellow;
+} */
+
+/*     5.Universal Selector */
+/* 
+*{
+   font-family: 'Courier New', Courier, monospace ;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* 6.Descendant Selector */
+#desSel p{
+    color: purple;
+}
+
+/* 7.Direct Child Selector */
+#dirSel >p{
+    color: orange;
+}
+
+p:hover{
+    color: green;
+}

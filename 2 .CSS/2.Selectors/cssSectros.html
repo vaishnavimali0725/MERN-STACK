@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="cssSectros.css">
+</head>
+<body>
+    <!-- 
+    >>Element Selectors
+    >>ID Selectors
+    >>Class Selectors
+    >>Universal Selectors
+    >>Nested Selectors
+    >>Direct Child Selectors
+    >>Descendant Selectors
+
+    -->
+    <header>
+        <h1>Selectors in CSS</h1>
+    </header>
+    <main>
+        <article id="elementSel">
+            <h2>Element CSS</h2>
+            <p id="p1Id" class="highlighter">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Libero exercitationem sit quas. Omnis ab in, recusandae 
+                nostrum quia dolores, quae totam sed, pariatur soluta
+                accusamus autem! Voluptate tempore quia autem?
+            </p>
+        </article>
+
+        <article id="idSel">
+            <h2>ID Selector</h2>
+            <p id="pId" class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Libero exercitationem sit quas. Omnis ab in, recusandae 
+                nostrum quia dolores, quae totam sed, pariatur soluta
+                accusamus autem! Voluptate tempore quia autem?
+            </p>
+        </article>
+
+        <article id="classSel">
+            <h2 class="highlighter headerStyles">Class Selector</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Libero exercitationem sit quas. Omnis ab in, recusandae 
+                nostrum quia dolores, quae totam sed, pariatur soluta
+                accusamus autem! Voluptate tempore quia autem?
+            </p>
+        </article>
+
+        <article id="uniSel">
+            <h2 id="nestedId">Nested Selectors</h2>
+            <p class="nestedClass">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione aspernatur maiores at impedit provident consequuntur 
+                non velit modi eaque cumque? Facere architecto quod expedita dolorem!
+            </p>
+        </article>
+
+        <article id="desSel">
+            <h2>Descendant Selectors</h2>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, numquam?</p>
+            </section>
+            <p class="nestedClass">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione aspernatur maiores at impedit provident consequuntur 
+                non velit modi eaque cumque? Facere architecto quod expedita dolorem!
+            </p>
+        </article>
+
+        <article id="dirSel">
+            <h2>Direct Child Selectors</h2>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, numquam?</p>
+            </section>
+            <p class="nestedClass">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione aspernatur maiores at impedit provident consequuntur 
+                non velit modi eaque cumque? Facere architecto quod expedita dolorem!
+            </p>
+        </article>
+
+    </main>
+</body>
+</html>

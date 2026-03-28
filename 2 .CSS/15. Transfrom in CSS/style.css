@@ -1,0 +1,33 @@
+.outer-containter{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 100px auto;   
+}
+
+.inner-container{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleZ(1.2);
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(1.5); */
+
+    /* transform: skew(20deg, 60deg); */
+    /* transform: translate(50%,50%);
+    this is use to center of box */
+
+    /* transform: rotate(25deg) scale(1.3) skew(30deg) translate(50%); */
+    /* transition: transform 1s ease-in-out; */
+    transform-origin: top left ;
+    transition: rotate(70deg);
+    transition: 0.6 ease ;
+}
+
+.inner-container:hover{
+    transform: rotate(70deg);
+}
