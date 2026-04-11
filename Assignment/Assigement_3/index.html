@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Implementation</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header Bar */
+        #header {
+            background-color: #d3d3d3;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        .color-box {
+            margin: 10px;
+            padding: 15px;
+            display: inline-block;
+            border: 1px solid black;
+            cursor: pointer;
+            width: 80px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div id="header">Hello, User</div>
+
+    <h1>DOM Implementation</h1>
+
+    <!-- Color Boxes -->
+    <div class="color-box" onclick="changeColor(this, 'red')">Red</div>
+    <div class="color-box" onclick="changeColor(this, 'blue')">Blue</div>
+    <div class="color-box" onclick="changeColor(this, 'green')">Green</div>
+    <div class="color-box" onclick="changeColor(this, 'yellow')">Yellow</div>
+
+    <br><br>
+
+    <!-- Input -->
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="greetUser()">Greet</button>
+
+    <!-- Output -->
+    <div id="output"></div>
+
+    <script>
+        function changeColor(element, color) {
+            element.style.backgroundColor = color;
+        }
+
+        function greetUser() {
+            let name = document.getElementById("name").value;
+
+            // Update header
+            document.getElementById("header").innerHTML = "Hello, " + name;
+
+            // Optional output below
+            document.getElementById("output").innerHTML = "Welcome!";
+        }
+    </script>
+
+</body>
+</html>
