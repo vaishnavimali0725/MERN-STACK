@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Logo</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="username" id="headerName">Username</div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        
+        <div class="hero-text">
+            <h1>
+                Revitalize Your <br/>Clothes with Expert <br>
+                <span>Laundry Services!</span>
+            </h1>
+
+            <br>
+                From premium dry cleaning to swift wash and fold,
+                we<br/> deliver care and convenience.Schedule a pickup and rediscover the freshness of your clothes todat!
+            </p>
+
+            <button class="btn" onclick="updateName()">  <i class="fa-solid fa-house"></i>Book a service today!</button>
+
+            <p id="msg" style="color: green;"></p>
+        </div>
+
+        <img src="./image.png">
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements">
+        <h2>Our Achinevements</h2>
+        <div><b>15+</b><br>Laundry Services</div>
+        <div><b>240+</b><br>Happy Customers</div>
+        <div><b>2+ Yrs</b><br>Experience</div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <!-- LEFT SIDE -->
+        <div class="service-list">
+            <h2>Our Services</h2>
+            <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+
+            <div class="item">
+                <span>👕 Dry Cleaning <b>₹200.00</b></span>
+                <button data-name="Dry Cleaning" data-price="200">Add Item ➕</button>
+            </div>
+
+            <div class="item">
+                <span>🧺 Wash & Fold <b>₹100.00</b></span>
+                <button data-name="Wash & Fold" data-price="100">Add Item ➕</button>
+            </div>
+
+            <div class="item">
+                <span>🧼 Ironing <b>₹30.00</b></span>
+                <button data-name="Ironing" data-price="30">Add Item ➕</button>
+            </div>
+
+            <div class="item">
+                <span>✨ Stain Removal <b>₹500.00</b></span>
+                <button data-name="Stain Removal" data-price="500">Add Item ➕</button>
+            </div>
+
+            <div class="item">
+                <span>🧥 Leather & Suede Cleaning <b>₹999.00</b></span>
+                <button data-name="Leather Cleaning" data-price="999">Add Item ➕</button>
+            </div>
+
+            <div class="item">
+                <span>👗 Wedding Dress Cleaning <b>₹2800.00</b></span>
+                <button data-name="Wedding Dress" data-price="2800">Add Item ➕</button>
+            </div>
+
+            <p class="note">ℹ Add the items to the cart and book now</p>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="cart">
+            <h3>Added Items</h3>
+
+            <table id="cartTable">
+                <tr>
+                    <th>S.No</th>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+
+            <!-- FIXED TOTAL -->
+            <h3 class="total">Total Amount ₹0.00</h3>
+
+            <!-- BOOK SECTION -->
+            <div class="book" >
+                <h3>Book Now</h3>
+                <input type="text" id="fullName" placeholder="Full Name">
+               
+                <div class="row">
+                    <input type="email" id="email" placeholder="Email ID">
+
+                    <input type="text" id="phone" placeholder="Phone Number">
+                </div>
+
+                <!-- BUTTON READY FOR JS -->
+                <button class="book-btn">Book now</button>
+
+                <!-- MESSAGE AREA -->
+                <p id="bookMsg" style="color: green;"></p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- QUALITY SECTION -->
+<section class="quality">
+
+    <div class="quality-box">
+        <i class="fa-solid fa-shirt"></i>
+         <h3>Premium Services</h3>
+        <p>High-quality dry cleaning ensuring clothes look new.</p>
+    </div>
+
+    <div class="quality-box">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Quick Support</h3>
+        <p>Fast support for smooth and hassle-free experience.</p>
+    </div>
+
+    <div class="quality-box">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Hassle Free Delivery</h3>
+        <p>Easy pickup and delivery at your convenience.</p>
+    </div>
+
+    <div class="quality-box">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <h3>Affordable Prices</h3>
+        <p>Best services at budget-friendly prices.</p>
+    </div>
+
+</section>
+
+
+<!-- NEWSLETTER SECTION -->
+<section class="newsletter">
+
+    <div class="newsletter-left">
+        <h2>Subscribe to our newsletter.</h2>
+    </div>
+
+    <div class="newsletter-right">
+        <div class="input-row">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email">
+        </div>
+        <button>Subscribe</button>
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- LOGO -->
+            <div class="footer-col">
+                <h2>Logo</h2>
+                <p><b>About us</b></p>
+                <p>Lorem Ipsum Dolor Sit Amet<br>Consectetur. Sed At Congue.</p>
+            </div>
+
+            <!-- IMPORTANT LINKS -->
+            <div class="footer-col">
+                <h3>Important Links</h3>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>Privacy Policy</p>
+                <p>Terms of use</p>
+                <p>Refund Policy</p>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>mail@site.com</p>
+                <p>+91 91234 56780</p>
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- SCRIPT -->
+  <script>
+    let cart = {};
+    let total = 0;
+
+    const table = document.getElementById("cartTable");
+    const totalEl = document.querySelector(".total");
+
+    // HANDLE ADD / REMOVE
+    document.querySelectorAll(".service-list button").forEach(btn => {
+
+        btn.addEventListener("click", function () {
+
+            let name = this.dataset.name;
+            let price = parseInt(this.dataset.price);
+
+            // ADD ITEM
+            if (!cart[name]) {
+
+                let row = table.insertRow(-1);
+                let index = table.rows.length - 1;
+
+                row.innerHTML = `
+                    <td>${index}</td>
+                    <td>${name}</td>
+                    <td>₹${price}.00</td>
+                `;
+
+                cart[name] = { price: price, row: row };
+
+                total += price;
+                updateTotal();
+
+                this.innerText = "Remove Item ⛔";
+                this.classList.add("remove");
+
+            } else {
+                // REMOVE ITEM
+                cart[name].row.remove();
+
+                total -= price;
+
+                delete cart[name];
+
+                this.innerText = "Add Item ➕";
+                this.classList.remove("remove");
+
+                updateSerial();
+                updateTotal();
+            }
+        });
+    });
+
+    // UPDATE TOTAL
+    function updateTotal() {
+        totalEl.innerText = "Total Amount ₹" + total.toFixed(2);
+    }
+
+    // FIX SERIAL NUMBER
+    function updateSerial() {
+        let rows = table.querySelectorAll("tr");
+
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].innerText = i;
+        }
+    }
+
+    // BOOK NOW
+    document.querySelector(".book-btn").addEventListener("click", function () {
+
+        let name = document.getElementById("fullName").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+
+        let msg = document.getElementById("bookMsg");
+
+        if (name === "" || email === "" || phone === "") {
+            msg.style.color = "red";
+            msg.innerText = "⚠️ Please fill all details!";
+            return;
+        }
+
+        if (total === 0) {
+            msg.style.color = "red";
+            msg.innerText = "⚠️ Please add at least one service!";
+            return;
+        }
+
+        msg.style.color = "green";
+        msg.innerText = "✅ Thank you! Booking confirmed.";
+
+        // CLEAR FORM
+        document.getElementById("fullName").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+    });
+    </script>
+
+</body>
+</html>
